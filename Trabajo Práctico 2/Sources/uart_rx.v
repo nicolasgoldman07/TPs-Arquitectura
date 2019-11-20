@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module uart_rx
 #(
     parameter DBIT = 8, // # data bits
