@@ -3,14 +3,14 @@
 module uart
 #(  // Default setting:
     // 19,200 baud, 8 data bits, 1 stop bit, 2^2 FIFO
-    parameter   DBIT = 8,       // # data bits
-    parameter   SB_TICK = 16,   // # ticks for stop bits,
-                                // 16/24/32 for 1 / 1.5 / 2 bits
-    parameter   DVSR = 163,     // baud rate divisor
-                                // DVSR = 50M/(16* baud rate)
-    parameter   DVSR_BIT = 8,   // # bits of DVSR
-    parameter   FIFO_W = 2      // # addr bits of FIFO
-                                // # words in FIFO=2^FIFO_W
+    parameter   DBIT        = 8,    // # data bits
+    parameter   SB_TICK     = 16,   // # ticks for stop bits,
+                                    // 16 for 1 stop bit
+    parameter   DVSR        = 326,  // baud rate divisor
+                                    // DVSR = 100M/(16* baud rate)
+    parameter   DVSR_BIT    = 9,    // # bits of DVSR
+    parameter   FIFO_W      = 2     // # addr bits of FIFO
+                                    // # words in FIFO=2^FIFO_W
 )
 (
 input   wire            clk, reset,

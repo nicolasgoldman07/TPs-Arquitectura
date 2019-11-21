@@ -2,8 +2,8 @@
 
 module mod_m_counter
 #(
-  parameter M = 163,  //mod-M163
-	parameter N = 8     //8 bits in counter
+  parameter M = 326,  //mod-M163
+	parameter N = 9     //8 bits in counter
 
 )
 (
