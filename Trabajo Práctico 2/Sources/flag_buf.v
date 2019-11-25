@@ -27,5 +27,5 @@ always @ (posedge clk, posedge reset)
       buf_reg   <=  buf_next;
       flag_reg  <=  flag_next;     
     end
-
+endmodule
     
