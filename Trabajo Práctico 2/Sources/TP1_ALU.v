@@ -19,7 +19,7 @@ module TP1_ALU
     localparam	OP_ADD 	= 6'b100000;	//SUMA
     localparam	OP_SUB 	= 6'b100010;	//RESTA
     localparam	OP_AND 	= 6'b100100;    //AND
-    localparam	OP_OR	= 6'b100101;	//OR
+    localparam	OP_OR	  = 6'b100101;	//OR
     localparam	OP_XOR	= 6'b100110;	//XOR
     localparam	OP_SRA	= 6'b000011;	//SHIFT R (DER) ARITMETICO >>>
     localparam	OP_SRL	= 6'b000010;	//SHIFT R (DER) LOGICO >>

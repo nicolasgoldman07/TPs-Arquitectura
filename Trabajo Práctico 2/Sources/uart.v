@@ -37,9 +37,9 @@ module uart
         .s_tick(tick), .din(tx_data), 
         .tx_done_tick(tx_done_tick), .tx(tx));
 
-    // uart_test test1
-    // (.clk(clk), .reset(reset), .rx_done_tick(rx_done_tick),
-    // .rx_data(rx_data_out), .tx_start(tx_start), .tx_data(tx_data));
+     //uart_test test1
+     //(.clk(clk), .reset(reset), .rx_done_tick(rx_done_tick),
+     //.rx_data(rx_data_out), .tx_start(tx_start), .tx_data(tx_data));
 
     uart_to_alu_to_uart uart_alu_2 (.clk(clk), .reset(reset), .rx_done_tick(rx_done_tick),
         .rx_data(rx_data_out), .tx_start(tx_start), .tx_data(tx_data));
